@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRUTH ARCHIVE</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Inter', sans-serif; letter-spacing: 0.02em; }
+</style>
+
+</head>
+
+<body class="bg-black text-white">
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+  <!-- NAVBAR -->
+  <nav class="absolute top-0 left-0 w-full z-20 flex justify-between items-center px-10 py-6 text-xs tracking-widest">
+    <div class="font-semibold">TRUTH ARCHIVE</div>
+    <div class="flex gap-6 text-gray-400">
+      <a href="#" class="hover:text-white transition">SHOP</a>
+      <a href="#" class="hover:text-white transition">LOOKBOOK</a>
+      <a href="#" class="hover:text-white transition">ABOUT</a>
+    </div>
+  </nav>
+
+  <!-- BACKGROUND -->
+  <img src="images/bg01.png"
+       class="absolute inset-0 w-full h-full object-cover opacity-60 contrast-110"/>
+
+  <!-- OVERLAY -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+
+    <!-- NEW HEADING -->
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1] tracking-tight">
+      DEFINE<br/>
+      YOUR TRUTH<span class="text-gray-500">.</span>
+    </h1>
+
+    <!-- SUBTEXT -->
+    <p class="mt-6 text-gray-300 max-w-md mx-auto text-sm leading-relaxed">
+      Not made for everyone. Built for those who refuse to follow.
+    </p>
+
+    <!-- CTA -->
+    <div class="mt-10 flex justify-center gap-4">
+      <button class="px-8 py-3 border border-white text-sm tracking-widest hover:bg-white hover:text-black transition">
+        ENTER DROP
+      </button>
+      <button class="px-8 py-3 text-sm tracking-widest text-gray-400 hover:text-white transition">
+        LOOKBOOK
+      </button>
+    </div>
+
+  </div>
+
+  <!-- BACK TEXT -->
+  <h2 class="absolute text-[100px] md:text-[160px] font-extrabold text-white/5 tracking-tight select-none">
+    TRUTH
+  </h2>
+
+</section>
+
+<!-- STORY -->
+<section class="px-10 py-28 max-w-3xl mx-auto text-center border-t border-white/10">
+<h3 class="text-xl font-semibold mb-6 tracking-wide">NOT FOR EVERYONE</h3>
+<p class="text-gray-400 leading-relaxed text-sm">
+Truth Archive dibuat untuk mereka yang muak dengan desain mainstream.
+Ini bukan sekadar pakaian. Ini identitas.
+</p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="px-10 pb-32">
+<h2 class="text-xs tracking-[0.3em] text-gray-500 mb-12">LATEST DROP</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div class="group relative cursor-pointer" onclick="openModal('ARCHIVE HOODIE','Rp 499.000','images/jk.png')">
+<div class="aspect-[2/3] overflow-hidden">
+<img src="images/jk.png" class="w-full h-full object-cover transition duration-700 group-hover:scale-105"/>
+</div>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition"></div>
+<div class="absolute bottom-4 left-4 text-xs text-gray-300">LIMITED DROP</div>
+</div>
+
+<div class="group relative cursor-pointer" onclick="openModal('SIGNATURE DROP','Rp 299.000','images/tw.png')">
+<div class="aspect-[2/3] overflow-hidden">
+<img src="images/tw.png" class="w-full h-full object-cover transition duration-700 group-hover:scale-105"/>
+</div>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition"></div>
+<div class="absolute bottom-4 left-4 text-xs text-gray-300">ONLY FEW LEFT</div>
+</div>
+
+<div class="group relative cursor-pointer" onclick="openModal('TRUTH TEE 02','Rp 259.000','images/tb.png')">
+<div class="aspect-[2/3] overflow-hidden">
+<img src="images/tb.png" class="w-full h-full object-cover transition duration-700 group-hover:scale-105"/>
+</div>
+<div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition"></div>
+<div class="absolute bottom-4 left-4 text-xs text-gray-300">LIMITED</div>
+</div>
+
+</div>
+</section>
+
+<!-- WHY -->
+<section class="px-10 py-28 border-t border-white/10 text-center">
+<h3 class="text-2xl font-semibold mb-16">WHY TRUTH ARCHIVE</h3>
+
+<div class="grid md:grid-cols-3 gap-10 text-sm">
+
+<div>
+<p class="font-semibold mb-2">LIMITED</p>
+<p class="text-gray-500">Exclusive drops only.</p>
+</div>
+
+<div>
+<p class="font-semibold mb-2">QUALITY</p>
+<p class="text-gray-500">Heavy. Durable. Built to last.</p>
+</div>
+
+<div>
+<p class="font-semibold mb-2">IDENTITY</p>
+<p class="text-gray-500">Wear your statement.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section class="px-10 py-28 text-center border-t border-white/10">
+<h3 class="text-2xl md:text-3xl font-bold mb-6">
+THIS IS NOT FOR EVERYONE
+</h3>
+
+<p class="text-gray-400 max-w-md mx-auto mb-10 text-sm">
+If you follow trends, this isn’t for you.
+</p>
+
+<button class="px-10 py-3 border border-white hover:bg-white hover:text-black transition text-sm tracking-widest">
+GET YOURS
+</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="px-10 py-16 border-t border-white/10 text-center">
+<h4 class="text-sm font-semibold mb-4 tracking-widest">TRUTH ARCHIVE</h4>
+<p class="text-gray-500 text-xs mb-4">Built for those who refuse to blend in.</p>
+<p class="text-gray-600 text-xs">© 2026 TRUTH ARCHIVE</p>
+</footer>
+
+<!-- MODAL -->
+<div id="productModal" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50" onclick="closeModal()">
+
+<div onclick="event.stopPropagation()" class="bg-black max-w-4xl w-full mx-4 grid md:grid-cols-2">
+
+<div class="h-[500px]">
+<img id="modalImage" class="w-full h-full object-cover">
+</div>
+
+<div class="p-8 flex flex-col justify-between">
+
+<div>
+<h3 id="modalTitle" class="text-xl font-semibold"></h3>
+<p id="modalPrice" class="text-gray-400 mt-2 text-sm"></p>
+
+<p class="text-gray-500 text-xs mt-6">
+Heavy cotton. Oversized fit. Limited release.
+</p>
+</div>
+
+<div class="space-y-3">
+<button class="w-full py-3 border border-white hover:bg-white hover:text-black transition text-sm">
+BUY NOW
+</button>
+
+<button onclick="closeModal()" class="w-full py-3 text-gray-400 hover:text-white text-sm">
+CLOSE
+</button>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<script>
+function openModal(title, price, image) {
+  document.getElementById('productModal').classList.remove('hidden');
+  document.getElementById('productModal').classList.add('flex');
+
+  document.getElementById('modalTitle').innerText = title;
+  document.getElementById('modalPrice').innerText = price;
+  document.getElementById('modalImage').src = image;
+}
+
+function closeModal() {
+  document.getElementById('productModal').classList.add('hidden');
+}
+</script>
+
+</body>
+</html>
